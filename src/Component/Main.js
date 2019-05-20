@@ -16,6 +16,9 @@ class Main extends Component{
     this.setState({data:mockdata['Data']})
   }
   
+  _handleCheckCourse = () => {
+    this.props.history.push('/Course')
+  }
   render(){
     
     return(
@@ -27,10 +30,10 @@ class Main extends Component{
         {/* End Navbar */}
         <div className="row">
           <div className="col-md-6">
-            <p style={{textAlign:'right'}}>Name - Surname : Kuy Tor</p>
+            <p style={{textAlign:'right'}}>Name - Surname : Tatchanon Kummalue</p>
           </div>
           <div className="col-md-6">
-            <p>Student Id : 55555555</p>
+            <p>Student Id : 5833630023</p>
           </div>
         </div>
         <div className="row">
@@ -40,9 +43,12 @@ class Main extends Component{
           <div className="col-md-3">
             <p>Major : Computer Science</p>
           </div>
+          <div className='col-md-1'>
+            <button className="form-control" style={{borderRadius:15, fontSize:10}} onClick={this._handleCheckCourse}>Course</button>
+          </div>
           <div>
             <ReactToPrint
-              trigger={() => <button className="btn btn-info" style={{borderRadius:15}}>Request Transcript</button>}
+              trigger={() => <button className="btn btn-info" style={{borderRadius:15, fontSize:10}}>Request Transcript</button>}
               content={() => this.printComponent}
             />
             

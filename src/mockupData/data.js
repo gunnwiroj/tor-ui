@@ -100,7 +100,7 @@ exports.Data = [
           grade:'D'
         },
         {
-          courseId:'33004102',
+          courseId:'3304102',
           courseName:'DRUG EDUCATION',
           credit:3,
           grade:'B'
@@ -405,8 +405,58 @@ exports.Data = [
   }
 ];
 
+exports.Course = [
+  {label:'2301481 Theory of Games', value:1},
+  {label:'2304103 General Physics II', value:2},
+  {label:'5500111 Experiencetial English', value:3}
+]
 
-
+exports.CourseDetail = [
+  {value:1,detail:[
+    '(1) Introduction to Game theory',
+    '(2) Combinatorial games',
+    '(3) Two-person zero-sum game',
+    '(4) Two-person general-sum game',
+    '(5) N-person game',
+  ],
+  subdetail:[
+    '(1.1) Definition of game theory',
+  '(1.2) History of game theory',
+  '(1.3) Related fields that adapt game theory',
+  '(2.1) Take-Away game',
+  '(2.2) Subtraction game',
+  '(2.3) Nim game',
+  '(2.4) Sprage-Grundy function',
+  '(2.5) Graph game',
+  '(2.6) Sum of Graph game',
+  '(3.1) Game in normal form/strategic form',
+  '(3.2) Mixed strategy of games',
+  '(3.3) Solving a finite game',
+  '(3.4) Game simplex',
+  '(3.5) Game in extensive form',
+  '(4.1) Bimatrix of game',
+  '(4.2) Safety-level',
+  '(4.3) Equalizing strategy',
+  '(4.4) Noncooperative game',
+  '(4.5) Nash equilibruim',
+  '(4.6) Monopoly vs. Duopoly',
+  '(4.7) Cooperative game',
+  '(4.8) NTU (NTU=Non Transferable Utility) and TU (Transferable Utility) solution',
+  '(5.1) Game in coalitional form',
+  '(5.2) Imputation and Core',
+  ]},
+  {
+    value:2,detail:[], subdetail:[]
+  },
+  {value:3,detail:[], subdetail:[]}
+]
+// 2301481 Theory of Games, Main topics = 
+// (1) Introduction to Game theory, (2) Combinatorial games, (3) Two-person zero-sum game, (4) Two-person general-sum game, (5) N-person game
+// Subtopics = (1.1) Definition of game theory, (1.2) History of game theory, (1.3) Related fields that adapt game theory
+// (2.1) Take-Away game, (2.2) Subtraction game, (2.3) Nim game, (2.4) Sprage-Grundy function, (2.5) Graph game, (2.6) Sum of Graph game
+// (3.1) Game in normal form/strategic form, (3.2) Mixed strategy of games, (3.3) Solving a finite game, (3.4) Game simplex (3.5) Game in extensive form
+// (4.1) Bimatrix of game, (4.2) Safety-level, (4.3) Equalizing strategy, (4.4) Noncooperative game, (4.5) Nash equilibruim (4.6) Monopoly vs. Duopoly, (4.7) Cooperative game, (4.8) NTU (NTU=Non Transferable Utility) and TU (Transferable Utility) solution
+// (5.1) Game in coalitional form, (5.2) Imputation and Core
 // {
 //   courseId:,
 //   courseName:'',

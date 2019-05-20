@@ -18,21 +18,23 @@ class Login extends Component{
   }
   render(){
     return(
-      <div className="col-md-12" style={{height:'100vh', backgroundColor:'#dfaea9'}}>
-        <h4 style={{textAlign:'center'}}>Kuy TOR</h4>
-        <div className="col-md-4 offset-md-4" style={{backgroundColor:'#fefefe', borderRadius:2}}>
+      <div className="col-md-12" style={{height:'100vh', }}>
+        <div className='col-md-2 offset-md-5' style={{justifyContent:'center', marginTop:10}}>
+          <img src='https://yt3.ggpht.com/a/AGF-l79KhH56kPFNZTcEsTL92FvHEcLlQtUIVaFvRQ=s900-mo-c-c0xffffffff-rj-k-no' style={{width:'20vh'}}/>
+        </div>
+        <div className="col-md-4 offset-md-4" style={{backgroundColor:'#e5e5e5', borderRadius:2}}>
           <div>
-            <p style={{justifyContent:'center'}}>Login</p>
+            <h6 style={{textAlign:'center', paddingTop:25}}>Login</h6>
           </div>
-          <div>
+          <div className="form-group">
             <p style={{textAlign:'left'}}>Email</p>
             <input className="form-control" onChange={(e) => this.setState({username:e.target.value})}/>
           </div>
-          <div>
+          <div className='form-group'>
             <p style={{textAlign:'left'}}>Password</p>
             <input className="form-control" type="password" onChange={(e) => this.setState({password:e.target.value})}/>
           </div>
-          <div style={{paddingTop:40,paddingBottom:20}}>
+          <div style={{paddingTop:0,paddingBottom:20}}>
             <button className="col-md-12 btn" style={{backgroundColor:'#fe3573'}} onClick={this._handleLogin}>Login</button>
           </div>
         </div>
